@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="8ca-FA-qf9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Master Navigation-->
+        <scene sceneID="RqA-cd-T3g">
+            <objects>
+                <navigationController title="Travel Lingo" id="bPb-IL-R3f" userLabel="Master Navigation" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="f2w-3C-GzD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7k8-pf-5R7" kind="relationship" relationship="rootViewController" id="WVX-FX-uUh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVa-qm-iEM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-714"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="xUK-Fn-Dgu">
+            <objects>
+                <splitViewController id="8ca-FA-qf9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="bPb-IL-R3f" kind="relationship" relationship="masterViewController" id="9sJ-SF-PCq"/>
+                        <segue destination="11i-dG-Tru" kind="relationship" relationship="detailViewController" id="Og9-n2-rTM"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCm-II-9Z8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856" y="-330"/>
+        </scene>
+        <!--Master View Controller-->
+        <scene sceneID="o9N-CU-9C4">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7k8-pf-5R7" userLabel="Master View Controller" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ML6-TU-b0W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="7k8-pf-5R7" id="ntG-q0-cwA"/>
+                            <outlet property="delegate" destination="7k8-pf-5R7" id="QTT-rG-Zgz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="VBF-G8-TMI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSH-q2-RLW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="-714"/>
+        </scene>
+        <!--Detail Navigation-->
+        <scene sceneID="45g-iM-D1G">
+            <objects>
+                <navigationController id="11i-dG-Tru" userLabel="Detail Navigation" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9c1-Ex-5mF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vIj-Ht-VlX" kind="relationship" relationship="rootViewController" id="9KM-ky-Z53"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opm-gI-YcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="129"/>
+        </scene>
+        <!--Phrases View Controller-->
+        <scene sceneID="owp-Zg-hi3">
+            <objects>
+                <tableViewController title="Phrases" id="vIj-Ht-VlX" userLabel="Phrases View Controller" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ktj-Rl-6IS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="vIj-Ht-VlX" id="IVF-uh-ASX"/>
+                            <outlet property="delegate" destination="vIj-Ht-VlX" id="CwH-8m-pCF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="017-gY-rWt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMK-Fq-gfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="129"/>
+        </scene>
+    </scenes>
+</document>

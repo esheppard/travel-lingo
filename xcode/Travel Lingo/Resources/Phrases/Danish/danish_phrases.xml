@@ -1,0 +1,22 @@
+<translation language="danish" country-code-for-flag="DK">
+
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Goddag" audio-file="danish_hello.aiff" />
+        <item phrase="Thank you" translation="Tak" audio-file="danish_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Undskyld mig" audio-file="danish_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="Jeg forstår ikke" audio-file="danish_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="Hvordan har du det?" audio-file="danish_how_are_you.aiff" />
+        <item phrase="I'm good" translation="Jeg har det godt" audio-file="danish_im_good.aiff" />
+        <item phrase="My name is …" translation="Mit navn er …" audio-file="danish_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="Jeg er fra …" audio-file="danish_im_from.aiff" />
+        <item phrase="Beautiful" translation="Smuk" audio-file="danish_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="Hvordan siger man … ?" audio-file="danish_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="Hvor meget?" audio-file="danish_how_much.aiff" />
+        <item phrase="Where is … ?" translation="Hvor er … ?" audio-file="danish_where_is.aiff" />
+        <item phrase="Bathroom" translation="Badeværelse" audio-file="danish_bathroom.aiff" />
+        <item phrase="No" translation="Nej" audio-file="danish_no.aiff" />
+        
+    </grouping>
+
+</translation>

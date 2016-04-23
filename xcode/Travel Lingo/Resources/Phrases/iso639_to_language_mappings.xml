@@ -1,0 +1,37 @@
+<iso639-mappings>
+    
+    <iso6391 language-code="af" language="afrikaans" />
+    <iso6391 language-code="ar" language="arabic" />
+    <iso6391 language-code="ca" language="catalan" />
+    <iso6391 language-code="cs" language="czech" />
+    <iso6391 language-code="da" language="danish" />
+    <iso6391 language-code="de" language="german" />
+    <iso6391 language-code="el" language="greek" />
+    <iso6391 language-code="en" language="english" />
+    <iso6391 language-code="es" language="spanish" />
+    <iso6391 language-code="fi" language="finnish" />
+    <iso6391 language-code="fr" language="french" />
+    <iso6391 language-code="hi" language="hindi" />
+    <iso6391 language-code="hr" language="croatian" />
+    <iso6391 language-code="hu" language="hungarian" />
+    <iso6391 language-code="id" language="indonesian" />
+    <iso6391 language-code="it" language="italian" />
+    <iso6391 language-code="ja" language="japanese" />
+    <iso6391 language-code="km" language="cambodian" />
+    <iso6391 language-code="ko" language="korean" />
+    <iso6391 language-code="lo" language="lao" />
+    <iso6391 language-code="ms" language="malay" />
+    <iso6391 language-code="nl" language="dutch" />
+    <iso6391 language-code="pl" language="polish" />
+    <iso6391 language-code="pt" language="portuguese" />
+    <iso6391 language-code="ro" language="romanian" />
+    <iso6391 language-code="ru" language="russian" />
+    <iso6391 language-code="sv" language="swedish" />
+    <iso6391 language-code="th" language="thai" />
+    <iso6391 language-code="tr" language="turkish" />
+    <iso6391 language-code="vi" language="vietnamese" />
+    
+    <iso6393 language-code="cmn" language="mandarin" en-name="Mandarin"/>
+    <iso6393 language-code="yue" language="cantonese" en-name="Cantonese"/>
+    
+</iso639-mappings>

@@ -1,0 +1,22 @@
+<translation language="spanish-es" country-code-for-flag="ES">
+
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Hola" audio-file="spanish-es_hello.aiff" />
+        <item phrase="Thank you" translation="Gracias" audio-file="spanish-es_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Perdone" audio-file="spanish-es_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="No entiendo" audio-file="spanish-es_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="¿Cómo estás?" audio-file="spanish-es_how_are_you.aiff" />
+        <item phrase="I'm good" translation="Estoy bien" audio-file="spanish-es_im_good.aiff" />
+        <item phrase="My name is …" translation="Mi nombre es …" audio-file="spanish-es_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="Soy de …" audio-file="spanish-es_im_from.aiff" />
+        <item phrase="Beautiful" translation="Hermosa" audio-file="spanish-es_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="¿Cómo se dice … ?" audio-file="spanish-es_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="¿Cuánto cuesta?" audio-file="spanish-es_how_much.aiff" />
+        <item phrase="Where is … ?" translation="¿Dónde está … ?" audio-file="spanish-es_where_is.aiff" />
+        <item phrase="Bathroom" translation="Baño" audio-file="spanish-es_bathroom.aiff" />
+        <item phrase="No" translation="No" audio-file="spanish-es_no.aiff" />
+        
+    </grouping>
+
+</translation>

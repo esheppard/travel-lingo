@@ -1,0 +1,22 @@
+<translation language="english" country-code-for-flag="UK">
+
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Hello" audio-file="english_hello.aiff" />
+        <item phrase="Thank you" translation="Thank you" audio-file="english_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Excuse me" audio-file="english_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="I don't understand" audio-file="english_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="How are you?" audio-file="english_how_are_you.aiff" />
+        <item phrase="I'm good" translation="I'm good" audio-file="english_im_good.aiff" />
+        <item phrase="My name is …" translation="My name is …" audio-file="english_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="I'm from …" audio-file="english_im_from.aiff" />
+        <item phrase="Beautiful" translation="Beautiful" audio-file="english_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="How do you say … ?" audio-file="english_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="How much?" audio-file="english_how_much.aiff" />
+        <item phrase="Where is … ?" translation="Where is … ?" audio-file="english_where_is.aiff" />
+        <item phrase="Bathroom" translation="Bathroom" audio-file="english_bathroom.aiff" />
+        <item phrase="No" translation="No" audio-file="english_no.aiff" />
+        
+    </grouping>
+
+</translation>

@@ -1,0 +1,22 @@
+<translation language="mandarin" country-code-for-flag="CN">
+    
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Nǐ hǎo" native="你好" audio-file="mandarin_hello.aiff" />
+        <item phrase="Thank you" translation="Xiè xiè" native="谢谢" audio-file="mandarin_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Láojià" native="劳驾" audio-file="mandarin_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="Wǒ bù míngbái" native="我不明白" audio-file="mandarin_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="Nǐ zěnme yàng?" native="你怎么样？" audio-file="mandarin_how_are_you.aiff" />
+        <item phrase="I'm good" translation="Wǒ hěn hǎo" native="我很好" audio-file="mandarin_im_good.aiff" />
+        <item phrase="My name is …" translation="Wǒ de míngzì shì …" native="我的名字是 ..." audio-file="mandarin_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="Wǒ lái zì …" native="我来自 ..." audio-file="mandarin_im_from.aiff" />
+        <item phrase="Beautiful" translation="Měilì de" native="美丽的" audio-file="mandarin_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="Nǐ zěnme shuō … ?" native="你怎么说 … ?" audio-file="mandarin_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="Duōshǎo qián?" native="多少钱？" audio-file="mandarin_how_much.aiff" />
+        <item phrase="Where is … ?" translation="Zài nǎlǐ … ?" native="在哪里 ... ?" audio-file="mandarin_where_is.aiff" />
+        <item phrase="Bathroom" translation="Yùshì" native="浴室" audio-file="mandarin_bathroom.aiff" />
+        <item phrase="No" translation="Méiyǒu" native="没有" audio-file="mandarin_no.aiff" />
+        
+    </grouping>
+    
+</translation>

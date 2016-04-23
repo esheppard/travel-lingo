@@ -1,0 +1,22 @@
+<translation language="cantonese" country-code-for-flag="CN">
+
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Way neh ho" native="你好" audio-file="cantonese_hello.aiff" />
+        <item phrase="Thank you" translation="Doh jehè" native="谢谢" audio-file="cantonese_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Mm ho yee see" native="劳驾" audio-file="cantonese_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="Ngoh mm ming bak" native="我不明白" audio-file="cantonese_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="Neh ho mah?" native="你怎么样？" audio-file="cantonese_how_are_you.aiff" />
+        <item phrase="I'm good" translation="Ngoh ho" native="我很好" audio-file="cantonese_im_good.aiff" />
+        <item phrase="My name is …" translation="Ngoh mang hai …" native="我的名字是 ..." audio-file="cantonese_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="Ngoh jee …" native="我来自 ..." audio-file="cantonese_im_from.aiff" />
+        <item phrase="Beautiful" translation="Leng" native="美丽的" audio-file="cantonese_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="Neh deem wah … ?" native="你怎么说 … ?" audio-file="cantonese_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="Gay doh?" native="多少钱？" audio-file="cantonese_how_much.aiff" />
+        <item phrase="Where is … ?" translation="Bean doh … ?" native="在哪里 ... ?" audio-file="cantonese_where_is.aiff" />
+        <item phrase="Bathroom" translation="Chee soh" native="浴室" audio-file="cantonese_bathroom.aiff" />
+        <item phrase="No" translation="Mm hai" native="没有" audio-file="cantonese_no.aiff" />
+        
+    </grouping>
+
+</translation>

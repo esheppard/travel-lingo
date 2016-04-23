@@ -1,0 +1,22 @@
+<translation language="greek" country-code-for-flag="GR">
+
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Geia sas" audio-file="greek_hello.aiff" />
+        <item phrase="Thank you" translation="Sas ef̱charistó̱" audio-file="greek_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Me syncho̱reíte" audio-file="greek_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="Den katalavaíno̱" audio-file="greek_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="Pó̱s eísai?" audio-file="greek_how_are_you.aiff" />
+        <item phrase="I'm good" translation="Eímai kala" audio-file="greek_im_good.aiff" />
+        <item phrase="My name is …" translation="To ónomá mou eínai …" audio-file="greek_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="Eímai apó …" audio-file="greek_im_from.aiff" />
+        <item phrase="Beautiful" translation="Ómorfi̱" audio-file="greek_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="Pó̱s boreíte na peíte … ?" audio-file="greek_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="Póso?" audio-file="greek_how_much.aiff" />
+        <item phrase="Where is … ?" translation="Poú eínai … ?" audio-file="greek_where_is.aiff" />
+        <item phrase="Bathroom" translation="bánio" audio-file="greek_bathroom.aiff" />
+        <item phrase="No" translation="Óchi" audio-file="greek_no.aiff" />
+        
+    </grouping>
+
+</translation>

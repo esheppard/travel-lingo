@@ -1,0 +1,22 @@
+<translation language="italian" country-code-for-flag="IT">
+
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Ciao" audio-file="italian_hello.aiff" />
+        <item phrase="Thank you" translation="Grazie" audio-file="italian_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Mi scusi" audio-file="italian_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="Non capisco" audio-file="italian_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="Come stai?" audio-file="italian_how_are_you.aiff" />
+        <item phrase="I'm good" translation="Sto bene" audio-file="italian_im_good.aiff" />
+        <item phrase="My name is …" translation="Il mio nome è …" audio-file="italian_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="Io sono di …" audio-file="italian_im_from.aiff" />
+        <item phrase="Beautiful" translation="Bella" audio-file="italian_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="Come si dice … ?" audio-file="italian_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="Quanto costa?" audio-file="italian_how_much.aiff" />
+        <item phrase="Where is … ?" translation="Dove si trova … ?" audio-file="italian_where_is.aiff" />
+        <item phrase="Bathroom" translation="Bagno" audio-file="italian_bathroom.aiff" />
+        <item phrase="No" translation="No" audio-file="italian_no.aiff" />
+        
+    </grouping>
+
+</translation>

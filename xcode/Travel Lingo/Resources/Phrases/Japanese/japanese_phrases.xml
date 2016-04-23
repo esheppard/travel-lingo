@@ -1,0 +1,22 @@
+<translation language="japanese" country-code-for-flag="JP">
+
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Kon'nichiwa" native="こんにちは" audio-file="japanese_hello.aiff" />
+        <item phrase="Thank you" translation="Arigatō" native="ありがとう" audio-file="japanese_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Sumimasen" native="すみません" audio-file="japanese_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="Wakarimasen" native="わかりません" audio-file="japanese_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="Ogenkidesuka?" native="お元気ですか？" audio-file="japanese_how_are_you.aiff" />
+        <item phrase="I'm good" translation="Watashi wa genki desu" native="私は元気です" audio-file="japanese_im_good.aiff" />
+        <item phrase="My name is …" translation="Watashino namae wa … desu" native="私の名前は ... です" audio-file="japanese_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="Watashi wa … kara kimashita" native="私は ... から来ました" audio-file="japanese_im_from.aiff" />
+        <item phrase="Beautiful" translation="Utsukushī" native="美しい" audio-file="japanese_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="Wa dono yō ni iu nodesu ka ... ?" native="あなたはどのように言うのですか … ?" audio-file="japanese_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="Dono kuraidesu ka?" native="どのくらいですか?" audio-file="japanese_how_much.aiff" />
+        <item phrase="Where is … ?" translation="Dokodesu ka … ?" native="どこですか ... ?" audio-file="japanese_where_is.aiff" />
+        <item phrase="Bathroom" translation="Otearai" native="お手洗い" audio-file="japanese_bathroom.aiff" />
+        <item phrase="No" translation="Iie" native="いいえ" audio-file="japanese_no.aiff" />
+        
+    </grouping>
+
+</translation>

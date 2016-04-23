@@ -1,0 +1,22 @@
+<translation language="korean" country-code-for-flag="KR">
+
+    <grouping title="Basic Phrases">
+        
+        <item phrase="Hello" translation="Annyeonghaseyo" native="안녕하세요" audio-file="korean_hello.aiff" />
+        <item phrase="Thank you" translation="Gamsahabnida" native="감사합니다" audio-file="korean_thank_you.aiff" />
+        <item phrase="Excuse me" translation="Sillyehabnida" native="실례합니다" audio-file="korean_excuse_me.aiff" />
+        <item phrase="I don't understand" translation="Ihaega an dwaeyo" native="이해가 안 돼요" audio-file="korean_i_dont_understand.aiff" />
+        <item phrase="How are you?" translation="Jal jineseyo?" native="잘 지내세요?" audio-file="korean_how_are_you.aiff" />
+        <item phrase="I'm good" translation="Nan gwaenchanh-a" native="난 괜찮아" audio-file="korean_im_good.aiff" />
+        <item phrase="My name is …" translation="Nae ileum-eun …" native="내 이름은 ..." audio-file="korean_my_name_is.aiff" />
+        <item phrase="I'm from …" translation="eseo wass-eoyo …" native="에서 왔어요 ..." audio-file="korean_im_from.aiff" />
+        <item phrase="Beautiful" translation="Aleumdaun" native="아름다운" audio-file="korean_beautiful.aiff" />
+        <item phrase="How do you say … ?" translation="Dangsin-eun eotteohge malhabnikka … ?" native="당신은 어떻게 말합니까 ... ?" audio-file="korean_how_do_you_say.aiff" />
+        <item phrase="How much?" translation="Eolmana?" native="얼마나?" audio-file="korean_how_much.aiff" />
+        <item phrase="Where is … ?" translation="Eodi … ?" native="어디 ... ?" audio-file="korean_where_is.aiff" />
+        <item phrase="Bathroom" translation="Hwajangsil" native="화장실" audio-file="korean_bathroom.aiff" />
+        <item phrase="No" translation="Ani" native="아니" audio-file="korean_no.aiff" />
+        
+    </grouping>
+
+</translation>
