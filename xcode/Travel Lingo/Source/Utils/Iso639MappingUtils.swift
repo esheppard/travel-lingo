@@ -8,6 +8,9 @@
 
 import Foundation
 
+
+// MARK: - ISO 639 Mapping
+
 func loadIso639LanguageMappings() -> [Iso639LanguageMapping]?
 {
     let file = "iso639_to_language_mappings"
@@ -51,6 +54,27 @@ func iso639MappingForLanguage(language: String) -> Iso639LanguageMapping?
 }
 
 
+func iso639MappingForLanguageCode(languageCode: String) -> Iso639LanguageMapping?
+{
+    guard let mappings = DataStore.sharedStore.objectForKey(Iso639LanguageMappingsDataStoreKey) as? [Iso639LanguageMapping] else {
+        return nil
+    }
+    
+    for mapping in mappings
+    {
+        if let iso6391 = mapping.iso6391Code where iso6391 == languageCode {
+            return mapping
+        }
+        
+        if let iso6393 = mapping.iso6393Code where iso6393 == languageCode {
+            return mapping
+        }
+    }
+    
+    return nil
+}
+
+
 func displayStringForLanguage(language: String) -> String?
 {
     if let languageMapping = iso639MappingForLanguage(language)
@@ -74,3 +98,18 @@ func displayStringForLanguage(language: String) -> String?
     
     return nil
 }
+
+
+// MARK: - ISO 639 Preferences
+
+func preferredLanguageCodeIso639() -> String?
+{
+    if let language = NSLocale.preferredLanguages().first
+    {
+        let index = language.startIndex.advancedBy(2)
+        return language.substringToIndex(index)
+    }
+    
+    return nil
+}
+

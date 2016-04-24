@@ -64,7 +64,11 @@ class MasterViewController: UITableViewController
     private func configureNavigationButtons()
     {
         // settings button
-        let settingsButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(showSettings(_:)))
+        let image = UIImage(named: "settings-icon")?.imageWithRenderingMode(.AlwaysTemplate)
+        
+        let settingsButton = UIBarButtonItem(image: image, style: .Plain,target: self, action: #selector(showSettings(_:)))
+        settingsButton.tintColor = UIColor.blackColor()
+        
         self.navigationItem.rightBarButtonItem = settingsButton
         
         // back button

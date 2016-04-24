@@ -21,6 +21,9 @@
 		3D29272E1CCCA276005FD9EC /* TranslationLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29272A1CCCA276005FD9EC /* TranslationLocale.swift */; };
 		3D29272F1CCCA276005FD9EC /* TranslationPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29272B1CCCA276005FD9EC /* TranslationPhrase.swift */; };
 		3D2927301CCCA276005FD9EC /* TranslationPhraseGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29272C1CCCA276005FD9EC /* TranslationPhraseGrouping.swift */; };
+		3D2927461CCCCBF2005FD9EC /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D2927431CCCCBF2005FD9EC /* settings-icon.png */; };
+		3D2927471CCCCBF2005FD9EC /* settings-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D2927441CCCCBF2005FD9EC /* settings-icon@2x.png */; };
+		3D2927481CCCCBF2005FD9EC /* settings-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D2927451CCCCBF2005FD9EC /* settings-icon@3x.png */; };
 		3D8300151CC644CA005876A0 /* _currencyAUD.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD841CC644CA005876A0 /* _currencyAUD.png */; };
 		3D8300161CC644CA005876A0 /* _currencyEUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD851CC644CA005876A0 /* _currencyEUR.png */; };
 		3D8300171CC644CA005876A0 /* _currencyGBP.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD861CC644CA005876A0 /* _currencyGBP.png */; };
@@ -696,6 +699,9 @@
 		3D2927401CCCBE4A005FD9EC /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3D2927411CCCBEE8005FD9EC /* sv-SE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sv-SE"; path = "sv-SE.lproj/Main.strings"; sourceTree = "<group>"; };
 		3D2927421CCCBEE9005FD9EC /* sv-SE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sv-SE"; path = "sv-SE.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3D2927431CCCCBF2005FD9EC /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon.png"; sourceTree = "<group>"; };
+		3D2927441CCCCBF2005FD9EC /* settings-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon@2x.png"; sourceTree = "<group>"; };
+		3D2927451CCCCBF2005FD9EC /* settings-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon@3x.png"; sourceTree = "<group>"; };
 		3D8300001CC644CA005876A0 /* swedish_bathroom.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_bathroom.aiff; sourceTree = "<group>"; };
 		3D8300011CC644CA005876A0 /* swedish_beautiful.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_beautiful.aiff; sourceTree = "<group>"; };
 		3D8300021CC644CA005876A0 /* swedish_excuse_me.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_excuse_me.aiff; sourceTree = "<group>"; };
@@ -1480,6 +1486,9 @@
 				3D83FD821CC644CA005876A0 /* Flags */,
 				3D8302A11CCA59BB005876A0 /* audio-25.png */,
 				3D8302A21CCA59BB005876A0 /* audio-25@2x.png */,
+				3D2927431CCCCBF2005FD9EC /* settings-icon.png */,
+				3D2927441CCCCBF2005FD9EC /* settings-icon@2x.png */,
+				3D2927451CCCCBF2005FD9EC /* settings-icon@3x.png */,
 			);
 			name = Icons;
 			path = Resources/Icons;
@@ -2562,6 +2571,7 @@
 				3D8301571CC644CB005876A0 /* MG@2x.png in Resources */,
 				3D8302A31CCA59BB005876A0 /* audio-25.png in Resources */,
 				3D8300C91CC644CB005876A0 /* TN.png in Resources */,
+				3D2927471CCCCBF2005FD9EC /* settings-icon@2x.png in Resources */,
 				3D8302001CC644CB005876A0 /* greek_phrases.xml in Resources */,
 				3D8301C71CC644CB005876A0 /* cantonese_im_from.aiff in Resources */,
 				3D8301331CC644CB005876A0 /* ID@2x.png in Resources */,
@@ -2709,6 +2719,7 @@
 				3D8300BD1CC644CB005876A0 /* SR.png in Resources */,
 				3D8300A71CC644CB005876A0 /* PK.png in Resources */,
 				3D8300941CC644CB005876A0 /* MV.png in Resources */,
+				3D2927481CCCCBF2005FD9EC /* settings-icon@3x.png in Resources */,
 				3D8300D81CC644CB005876A0 /* VE.png in Resources */,
 				3D8300681CC644CA005876A0 /* IE.png in Resources */,
 				3D8301781CC644CB005876A0 /* QA@2x.png in Resources */,
@@ -2914,6 +2925,7 @@
 				3D8302231CC644CB005876A0 /* japanese_beautiful.aiff in Resources */,
 				3D8302441CC644CB005876A0 /* mandarin_excuse_me.aiff in Resources */,
 				3D83019E1CC644CB005876A0 /* UK@2x.png in Resources */,
+				3D2927461CCCCBF2005FD9EC /* settings-icon.png in Resources */,
 				3D8300321CC644CA005876A0 /* BR.png in Resources */,
 				3D8300E71CC644CB005876A0 /* _currencyUSD@2x.png in Resources */,
 				3D8301161CC644CB005876A0 /* DM@2x.png in Resources */,

@@ -24,16 +24,12 @@ class Preferences
         return _PreferencesInstance
     }
     
-    
     private init()
     {
-        let defaultValues: [String: AnyObject] = [
-            HomeLanguageKey: "english"
-        ]
-        
-        defaults.registerDefaults(defaultValues)
+        registerDefaults()
     }
 
+// MARK: - Values
 
     var homeLanguage: String?
     {
@@ -59,5 +55,25 @@ class Preferences
         {
             return defaults.stringForKey(LastLanguageKey)
         }
+    }
+    
+    
+// MARK: - Setup
+    
+    private func registerDefaults()
+    {
+        var defaultValues: [String: AnyObject] = [
+            HomeLanguageKey: "english"
+        ]
+        
+        // find the users preferred language
+        if let languageCode = preferredLanguageCodeIso639()
+        {
+            if let mapping = iso639MappingForLanguageCode(languageCode) {
+                defaultValues[HomeLanguageKey] = mapping.language
+            }
+        }
+        
+        defaults.registerDefaults(defaultValues)
     }
 }
