@@ -59,10 +59,7 @@ class SettingsViewController: UITableViewController
     private func configureBarButtons()
     {
         self.navigationItem.rightBarButtonItem =
-            UIBarButtonItem(title: NSLocalizedString("Done", comment: ""),
-                            style: .Done,
-                            target: self,
-                            action: #selector(doneAction(_:)))
+            UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(doneAction(_:)))
     }
     
     

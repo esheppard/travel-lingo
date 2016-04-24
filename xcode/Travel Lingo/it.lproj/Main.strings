@@ -6,7 +6,7 @@
 "7bK-jq-Zjz.title" = "Master";
 
 /* Class = "UITableViewController"; title = "Settings"; ObjectID = "DX0-up-Bkb"; */
-"DX0-up-Bkb.title" = "Preferencias";
+"DX0-up-Bkb.title" = "Settings";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "E4i-ag-GPn"; */
 "E4i-ag-GPn.text" = "Title";
@@ -27,7 +27,7 @@
 "fZj-5P-fME.text" = "Phrase";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "jhJ-Wj-K4X"; */
-"jhJ-Wj-K4X.title" = "Preferencias";
+"jhJ-Wj-K4X.title" = "Settings";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "zUN-8D-HvW"; */
 "zUN-8D-HvW.text" = "Title";

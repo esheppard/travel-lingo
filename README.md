@@ -20,3 +20,5 @@ An iOS app for travellers - 14 essential phrases professionally recorded by nati
 **Screenshots**
 
 ![Languages](/screenshots/languages-screenshot.png?raw=true)  ![Greek Phrases](/screenshots/greek-phrases-screenshot.png?raw=true)
+
+![Greek Phrases](/screenshots/spanish-phrases-in-greek-screenshot.png?raw=true)
