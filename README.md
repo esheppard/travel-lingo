@@ -3,14 +3,19 @@ Travel Lingo
 
 An iOS app for travellers - 14 essential phrases professionally recorded by native speakers in 12 languages.
 
-**Overview**
+**Technical Overview**
 - Swift
 - Universal storyboards
 - iPhone and iPad universal app
 - Localised string resources for international regions
+- Easy to add additional content - phrase packs are stored per language (in XML) with accompanying AIFF recordings
+
+**Features**
+- 14 languages
+  * Arabic, Cantonese, Danish, English, Greek, Hindi, Italian, Japanese, Korean, Mandarin, Spanish and Swedish
+- 12 phrases per language with all content recorded by native speakers
 - Settings screen to configure user's home language
   * Phrases are displayed in the user's home language with the translation underneath
-
 
 **Screenshots**
 
