@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		3D1F7BE31CC9F374000A3340 /* Iso639MappingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F7BE21CC9F374000A3340 /* Iso639MappingUtils.swift */; };
 		3D2927131CCC8ECA005FD9EC /* TranslationLocaleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2927121CCC8ECA005FD9EC /* TranslationLocaleUtils.swift */; };
+		3D29271B1CCCA249005FD9EC /* ChooseOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2927191CCCA249005FD9EC /* ChooseOptionViewController.swift */; };
+		3D29271C1CCCA249005FD9EC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29271A1CCCA249005FD9EC /* SettingsViewController.swift */; };
+		3D2927201CCCA258005FD9EC /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29271D1CCCA258005FD9EC /* SettingsItem.swift */; };
+		3D2927211CCCA258005FD9EC /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29271E1CCCA258005FD9EC /* SettingsOption.swift */; };
+		3D2927221CCCA258005FD9EC /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29271F1CCCA258005FD9EC /* SettingsSection.swift */; };
+		3D2927251CCCA264005FD9EC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2927231CCCA264005FD9EC /* MasterViewController.swift */; };
+		3D2927261CCCA264005FD9EC /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2927241CCCA264005FD9EC /* PhrasesViewController.swift */; };
+		3D2927281CCCA26B005FD9EC /* PhraseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2927271CCCA26B005FD9EC /* PhraseCell.swift */; };
+		3D29272D1CCCA276005FD9EC /* Iso639LanguageMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2927291CCCA276005FD9EC /* Iso639LanguageMapping.swift */; };
+		3D29272E1CCCA276005FD9EC /* TranslationLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29272A1CCCA276005FD9EC /* TranslationLocale.swift */; };
+		3D29272F1CCCA276005FD9EC /* TranslationPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29272B1CCCA276005FD9EC /* TranslationPhrase.swift */; };
+		3D2927301CCCA276005FD9EC /* TranslationPhraseGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29272C1CCCA276005FD9EC /* TranslationPhraseGrouping.swift */; };
 		3D8300151CC644CA005876A0 /* _currencyAUD.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD841CC644CA005876A0 /* _currencyAUD.png */; };
 		3D8300161CC644CA005876A0 /* _currencyEUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD851CC644CA005876A0 /* _currencyEUR.png */; };
 		3D8300171CC644CA005876A0 /* _currencyGBP.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD861CC644CA005876A0 /* _currencyGBP.png */; };
@@ -610,26 +622,15 @@
 		3D83027D1CC644CB005876A0 /* swedish_phrases.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3D83000C1CC644CA005876A0 /* swedish_phrases.xml */; };
 		3D83027E1CC644CB005876A0 /* swedish_thank_you.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3D83000D1CC644CA005876A0 /* swedish_thank_you.aiff */; };
 		3D83027F1CC644CB005876A0 /* swedish_where_is.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3D83000E1CC644CA005876A0 /* swedish_where_is.aiff */; };
-		3D8302851CC65F0A005876A0 /* TranslationLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302841CC65F0A005876A0 /* TranslationLocale.swift */; };
-		3D8302871CC65F95005876A0 /* TranslationPhraseGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302861CC65F95005876A0 /* TranslationPhraseGrouping.swift */; };
-		3D8302891CC66015005876A0 /* TranslationPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302881CC66015005876A0 /* TranslationPhrase.swift */; };
 		3D83028E1CC6E496005876A0 /* Iso639LanguageMappingsXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83028D1CC6E496005876A0 /* Iso639LanguageMappingsXMLParser.swift */; };
-		3D8302901CC6EA1E005876A0 /* Iso639LanguageMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83028F1CC6EA1E005876A0 /* Iso639LanguageMapping.swift */; };
 		3D8302931CC7907B005876A0 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302921CC7907B005876A0 /* Preferences.swift */; };
 		3D8302951CC794C1005876A0 /* TranslationLocaleXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302941CC794C1005876A0 /* TranslationLocaleXMLParser.swift */; };
-		3D8302971CC7A7F5005876A0 /* PhrasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302961CC7A7F5005876A0 /* PhrasesViewController.swift */; };
 		3D83029B1CCA4F13005876A0 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83029A1CCA4F13005876A0 /* FileUtils.swift */; };
 		3D83029D1CCA505B005876A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D83029C1CCA505B005876A0 /* AudioToolbox.framework */; };
 		3D83029F1CCA53F7005876A0 /* AudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83029E1CCA53F7005876A0 /* AudioUtils.swift */; };
 		3D8302A31CCA59BB005876A0 /* audio-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8302A11CCA59BB005876A0 /* audio-25.png */; };
 		3D8302A41CCA59BB005876A0 /* audio-25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8302A21CCA59BB005876A0 /* audio-25@2x.png */; };
-		3D8302A71CCA5D0D005876A0 /* PhraseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302A61CCA5D0D005876A0 /* PhraseCell.swift */; };
 		3D8302A91CCB2097005876A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8302A81CCB2097005876A0 /* Assets.xcassets */; };
-		3D8302B11CCB5F8F005876A0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302B01CCB5F8F005876A0 /* SettingsViewController.swift */; };
-		3D8302B31CCB61B0005876A0 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302B21CCB61B0005876A0 /* SettingsSection.swift */; };
-		3D8302B51CCB6286005876A0 /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302B41CCB6286005876A0 /* SettingsItem.swift */; };
-		3D8302B71CCB640C005876A0 /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302B61CCB640C005876A0 /* SettingsOption.swift */; };
-		3D8302B91CCC67E5005876A0 /* ChooseOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302B81CCC67E5005876A0 /* ChooseOptionViewController.swift */; };
 		3D8302C31CCC6C1A005876A0 /* TranslationLocale+FlagImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302BD1CCC6C1A005876A0 /* TranslationLocale+FlagImage.swift */; };
 		3D8302C41CCC6C1A005876A0 /* SequenceType+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302BF1CCC6C1A005876A0 /* SequenceType+Unique.swift */; };
 		3D8302C51CCC6C1A005876A0 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8302C01CCC6C1A005876A0 /* String+Utils.swift */; };
@@ -643,7 +644,6 @@
 		3DEC331A1CC635350046ED4B /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC33191CC635350046ED4B /* UnitTests.swift */; };
 		3DEC33251CC635350046ED4B /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC33241CC635350046ED4B /* UITests.swift */; };
 		3DEC33371CC6381E0046ED4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC33361CC6381E0046ED4B /* AppDelegate.swift */; };
-		3DEC333B1CC638700046ED4B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC33391CC638700046ED4B /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -666,6 +666,18 @@
 /* Begin PBXFileReference section */
 		3D1F7BE21CC9F374000A3340 /* Iso639MappingUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Iso639MappingUtils.swift; path = Source/Utils/Iso639MappingUtils.swift; sourceTree = "<group>"; };
 		3D2927121CCC8ECA005FD9EC /* TranslationLocaleUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationLocaleUtils.swift; path = Source/Utils/TranslationLocaleUtils.swift; sourceTree = "<group>"; };
+		3D2927191CCCA249005FD9EC /* ChooseOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseOptionViewController.swift; path = "Source/Features/Settings/View Controllers/ChooseOptionViewController.swift"; sourceTree = "<group>"; };
+		3D29271A1CCCA249005FD9EC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Source/Features/Settings/View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
+		3D29271D1CCCA258005FD9EC /* SettingsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsItem.swift; path = Source/Features/Settings/Models/SettingsItem.swift; sourceTree = "<group>"; };
+		3D29271E1CCCA258005FD9EC /* SettingsOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsOption.swift; path = Source/Features/Settings/Models/SettingsOption.swift; sourceTree = "<group>"; };
+		3D29271F1CCCA258005FD9EC /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsSection.swift; path = Source/Features/Settings/Models/SettingsSection.swift; sourceTree = "<group>"; };
+		3D2927231CCCA264005FD9EC /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = "Source/Features/Phrases/View Controllers/MasterViewController.swift"; sourceTree = "<group>"; };
+		3D2927241CCCA264005FD9EC /* PhrasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhrasesViewController.swift; path = "Source/Features/Phrases/View Controllers/PhrasesViewController.swift"; sourceTree = "<group>"; };
+		3D2927271CCCA26B005FD9EC /* PhraseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhraseCell.swift; path = Source/Features/Phrases/Cells/PhraseCell.swift; sourceTree = "<group>"; };
+		3D2927291CCCA276005FD9EC /* Iso639LanguageMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Iso639LanguageMapping.swift; path = Source/Features/Phrases/Models/Iso639LanguageMapping.swift; sourceTree = "<group>"; };
+		3D29272A1CCCA276005FD9EC /* TranslationLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationLocale.swift; path = Source/Features/Phrases/Models/TranslationLocale.swift; sourceTree = "<group>"; };
+		3D29272B1CCCA276005FD9EC /* TranslationPhrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationPhrase.swift; path = Source/Features/Phrases/Models/TranslationPhrase.swift; sourceTree = "<group>"; };
+		3D29272C1CCCA276005FD9EC /* TranslationPhraseGrouping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationPhraseGrouping.swift; path = Source/Features/Phrases/Models/TranslationPhraseGrouping.swift; sourceTree = "<group>"; };
 		3D8300001CC644CA005876A0 /* swedish_bathroom.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_bathroom.aiff; sourceTree = "<group>"; };
 		3D8300011CC644CA005876A0 /* swedish_beautiful.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_beautiful.aiff; sourceTree = "<group>"; };
 		3D8300021CC644CA005876A0 /* swedish_excuse_me.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_excuse_me.aiff; sourceTree = "<group>"; };
@@ -681,26 +693,15 @@
 		3D83000C1CC644CA005876A0 /* swedish_phrases.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = swedish_phrases.xml; sourceTree = "<group>"; };
 		3D83000D1CC644CA005876A0 /* swedish_thank_you.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_thank_you.aiff; sourceTree = "<group>"; };
 		3D83000E1CC644CA005876A0 /* swedish_where_is.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_where_is.aiff; sourceTree = "<group>"; };
-		3D8302841CC65F0A005876A0 /* TranslationLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationLocale.swift; path = Source/Models/TranslationLocale.swift; sourceTree = "<group>"; };
-		3D8302861CC65F95005876A0 /* TranslationPhraseGrouping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationPhraseGrouping.swift; path = Source/Models/TranslationPhraseGrouping.swift; sourceTree = "<group>"; };
-		3D8302881CC66015005876A0 /* TranslationPhrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationPhrase.swift; path = Source/Models/TranslationPhrase.swift; sourceTree = "<group>"; };
 		3D83028D1CC6E496005876A0 /* Iso639LanguageMappingsXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Iso639LanguageMappingsXMLParser.swift; path = Source/Parsers/Iso639LanguageMappingsXMLParser.swift; sourceTree = "<group>"; };
-		3D83028F1CC6EA1E005876A0 /* Iso639LanguageMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Iso639LanguageMapping.swift; path = Source/Models/Iso639LanguageMapping.swift; sourceTree = "<group>"; };
 		3D8302921CC7907B005876A0 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = Source/Repositories/Preferences.swift; sourceTree = "<group>"; };
 		3D8302941CC794C1005876A0 /* TranslationLocaleXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslationLocaleXMLParser.swift; path = Source/Parsers/TranslationLocaleXMLParser.swift; sourceTree = "<group>"; };
-		3D8302961CC7A7F5005876A0 /* PhrasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhrasesViewController.swift; path = "Source/View Controllers/PhrasesViewController.swift"; sourceTree = "<group>"; };
 		3D83029A1CCA4F13005876A0 /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileUtils.swift; path = Source/Utils/FileUtils.swift; sourceTree = "<group>"; };
 		3D83029C1CCA505B005876A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3D83029E1CCA53F7005876A0 /* AudioUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioUtils.swift; path = Source/Utils/AudioUtils.swift; sourceTree = "<group>"; };
 		3D8302A11CCA59BB005876A0 /* audio-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio-25.png"; sourceTree = "<group>"; };
 		3D8302A21CCA59BB005876A0 /* audio-25@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "audio-25@2x.png"; sourceTree = "<group>"; };
-		3D8302A61CCA5D0D005876A0 /* PhraseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhraseCell.swift; path = Source/Cells/PhraseCell.swift; sourceTree = "<group>"; };
 		3D8302A81CCB2097005876A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
-		3D8302B01CCB5F8F005876A0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Source/View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
-		3D8302B21CCB61B0005876A0 /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsSection.swift; path = Source/Models/SettingsSection.swift; sourceTree = "<group>"; };
-		3D8302B41CCB6286005876A0 /* SettingsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsItem.swift; path = Source/Models/SettingsItem.swift; sourceTree = "<group>"; };
-		3D8302B61CCB640C005876A0 /* SettingsOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsOption.swift; path = Source/Models/SettingsOption.swift; sourceTree = "<group>"; };
-		3D8302B81CCC67E5005876A0 /* ChooseOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseOptionViewController.swift; path = "Source/View Controllers/ChooseOptionViewController.swift"; sourceTree = "<group>"; };
 		3D8302BD1CCC6C1A005876A0 /* TranslationLocale+FlagImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TranslationLocale+FlagImage.swift"; sourceTree = "<group>"; };
 		3D8302BF1CCC6C1A005876A0 /* SequenceType+Unique.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+Unique.swift"; sourceTree = "<group>"; };
 		3D8302C01CCC6C1A005876A0 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
@@ -1309,7 +1310,6 @@
 		3DEC33241CC635350046ED4B /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		3DEC33261CC635350046ED4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DEC33361CC6381E0046ED4B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Source/AppDelegate.swift; sourceTree = "<group>"; };
-		3DEC33391CC638700046ED4B /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = "Source/View Controllers/MasterViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1338,16 +1338,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2927141CCCA10C005FD9EC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3D2927161CCCA122005FD9EC /* Phrases */,
+				3D2927151CCCA11A005FD9EC /* Settings */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		3D2927151CCCA11A005FD9EC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3D2927181CCCA15E005FD9EC /* Models */,
+				3D2927171CCCA148005FD9EC /* View Controllers */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		3D2927161CCCA122005FD9EC /* Phrases */ = {
+			isa = PBXGroup;
+			children = (
+				3D8302A51CCA5CEC005876A0 /* Cells */,
+				3D8302831CC65EEB005876A0 /* Models */,
+				3DEC33331CC6362D0046ED4B /* View Controllers */,
+			);
+			name = Phrases;
+			sourceTree = "<group>";
+		};
+		3D2927171CCCA148005FD9EC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D29271A1CCCA249005FD9EC /* SettingsViewController.swift */,
+				3D2927191CCCA249005FD9EC /* ChooseOptionViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3D2927181CCCA15E005FD9EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D29271D1CCCA258005FD9EC /* SettingsItem.swift */,
+				3D29271E1CCCA258005FD9EC /* SettingsOption.swift */,
+				3D29271F1CCCA258005FD9EC /* SettingsSection.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		3D8302831CC65EEB005876A0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3D8302841CC65F0A005876A0 /* TranslationLocale.swift */,
-				3D8302881CC66015005876A0 /* TranslationPhrase.swift */,
-				3D8302861CC65F95005876A0 /* TranslationPhraseGrouping.swift */,
-				3D83028F1CC6EA1E005876A0 /* Iso639LanguageMapping.swift */,
-				3D8302B41CCB6286005876A0 /* SettingsItem.swift */,
-				3D8302B61CCB640C005876A0 /* SettingsOption.swift */,
-				3D8302B21CCB61B0005876A0 /* SettingsSection.swift */,
+				3D2927291CCCA276005FD9EC /* Iso639LanguageMapping.swift */,
+				3D29272A1CCCA276005FD9EC /* TranslationLocale.swift */,
+				3D29272B1CCCA276005FD9EC /* TranslationPhrase.swift */,
+				3D29272C1CCCA276005FD9EC /* TranslationPhraseGrouping.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1380,7 +1424,7 @@
 		3D8302A51CCA5CEC005876A0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3D8302A61CCA5D0D005876A0 /* PhraseCell.swift */,
+				3D2927271CCCA26B005FD9EC /* PhraseCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -2242,11 +2286,9 @@
 				3DEC33361CC6381E0046ED4B /* AppDelegate.swift */,
 				3DBCAEA21CC72AEA00C8AFF2 /* AppConstants.swift */,
 				3DEC33341CC636420046ED4B /* Storyboards */,
-				3D8302A51CCA5CEC005876A0 /* Cells */,
-				3DEC33331CC6362D0046ED4B /* View Controllers */,
-				3D8302831CC65EEB005876A0 /* Models */,
-				3D83028C1CC6E473005876A0 /* Parsers */,
 				3DBCAEA61CC733D500C8AFF2 /* Extensions */,
+				3D2927141CCCA10C005FD9EC /* Features */,
+				3D83028C1CC6E473005876A0 /* Parsers */,
 				3D8302911CC79057005876A0 /* Repositories */,
 				3DBCAEA11CC723CE00C8AFF2 /* Utils */,
 			);
@@ -2256,10 +2298,8 @@
 		3DEC33331CC6362D0046ED4B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3DEC33391CC638700046ED4B /* MasterViewController.swift */,
-				3D8302961CC7A7F5005876A0 /* PhrasesViewController.swift */,
-				3D8302B01CCB5F8F005876A0 /* SettingsViewController.swift */,
-				3D8302B81CCC67E5005876A0 /* ChooseOptionViewController.swift */,
+				3D2927231CCCA264005FD9EC /* MasterViewController.swift */,
+				3D2927241CCCA264005FD9EC /* PhrasesViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -3020,32 +3060,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2927261CCCA264005FD9EC /* PhrasesViewController.swift in Sources */,
 				3D8302C41CCC6C1A005876A0 /* SequenceType+Unique.swift in Sources */,
+				3D2927301CCCA276005FD9EC /* TranslationPhraseGrouping.swift in Sources */,
 				3D8302951CC794C1005876A0 /* TranslationLocaleXMLParser.swift in Sources */,
-				3D8302891CC66015005876A0 /* TranslationPhrase.swift in Sources */,
 				3DEC33371CC6381E0046ED4B /* AppDelegate.swift in Sources */,
+				3D29271B1CCCA249005FD9EC /* ChooseOptionViewController.swift in Sources */,
+				3D2927211CCCA258005FD9EC /* SettingsOption.swift in Sources */,
 				3D8302931CC7907B005876A0 /* Preferences.swift in Sources */,
-				3D8302B51CCB6286005876A0 /* SettingsItem.swift in Sources */,
-				3D8302851CC65F0A005876A0 /* TranslationLocale.swift in Sources */,
-				3D8302A71CCA5D0D005876A0 /* PhraseCell.swift in Sources */,
-				3D8302B31CCB61B0005876A0 /* SettingsSection.swift in Sources */,
 				3DBCAEA31CC72AEA00C8AFF2 /* AppConstants.swift in Sources */,
-				3D8302871CC65F95005876A0 /* TranslationPhraseGrouping.swift in Sources */,
 				3D83029F1CCA53F7005876A0 /* AudioUtils.swift in Sources */,
-				3D8302B91CCC67E5005876A0 /* ChooseOptionViewController.swift in Sources */,
-				3D8302901CC6EA1E005876A0 /* Iso639LanguageMapping.swift in Sources */,
-				3D8302971CC7A7F5005876A0 /* PhrasesViewController.swift in Sources */,
+				3D2927251CCCA264005FD9EC /* MasterViewController.swift in Sources */,
+				3D29272F1CCCA276005FD9EC /* TranslationPhrase.swift in Sources */,
+				3D2927281CCCA26B005FD9EC /* PhraseCell.swift in Sources */,
 				3D83029B1CCA4F13005876A0 /* FileUtils.swift in Sources */,
 				3D8302C51CCC6C1A005876A0 /* String+Utils.swift in Sources */,
-				3D8302B71CCB640C005876A0 /* SettingsOption.swift in Sources */,
 				3D2927131CCC8ECA005FD9EC /* TranslationLocaleUtils.swift in Sources */,
-				3DEC333B1CC638700046ED4B /* MasterViewController.swift in Sources */,
 				3D8302C61CCC6C1A005876A0 /* UIColor+Theme.swift in Sources */,
 				3DBCAEAA1CC7355B00C8AFF2 /* DataStore.swift in Sources */,
+				3D29272E1CCCA276005FD9EC /* TranslationLocale.swift in Sources */,
+				3D2927201CCCA258005FD9EC /* SettingsItem.swift in Sources */,
+				3D29271C1CCCA249005FD9EC /* SettingsViewController.swift in Sources */,
 				3D1F7BE31CC9F374000A3340 /* Iso639MappingUtils.swift in Sources */,
+				3D29272D1CCCA276005FD9EC /* Iso639LanguageMapping.swift in Sources */,
 				3DBCAEA01CC723C900C8AFF2 /* AppLog.swift in Sources */,
+				3D2927221CCCA258005FD9EC /* SettingsSection.swift in Sources */,
 				3D8302C31CCC6C1A005876A0 /* TranslationLocale+FlagImage.swift in Sources */,
-				3D8302B11CCB5F8F005876A0 /* SettingsViewController.swift in Sources */,
 				3D83028E1CC6E496005876A0 /* Iso639LanguageMappingsXMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
