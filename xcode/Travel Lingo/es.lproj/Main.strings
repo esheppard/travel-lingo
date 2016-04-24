@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Translation"; ObjectID = "7WQ-9h-R3r"; */
+"7WQ-9h-R3r.text" = "Translation";
+
+/* Class = "UITableViewController"; title = "Master"; ObjectID = "7bK-jq-Zjz"; */
+"7bK-jq-Zjz.title" = "Master";
+
+/* Class = "UITableViewController"; title = "Settings"; ObjectID = "DX0-up-Bkb"; */
+"DX0-up-Bkb.title" = "Settings";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "E4i-ag-GPn"; */
+"E4i-ag-GPn.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "NOf-sp-jWT"; */
+"NOf-sp-jWT.text" = "Title";
+
+/* Class = "UINavigationController"; title = "Travel Lingo"; ObjectID = "RMx-3f-FxP"; */
+"RMx-3f-FxP.title" = "Travel Lingo";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "UMU-GM-tzA"; */
+"UMU-GM-tzA.text" = "Detail";
+
+/* Class = "UINavigationItem"; title = "Travel Lingo"; ObjectID = "Zdf-7t-Un8"; */
+"Zdf-7t-Un8.title" = "Travel Lingo";
+
+/* Class = "UILabel"; text = "Phrase"; ObjectID = "fZj-5P-fME"; */
+"fZj-5P-fME.text" = "Phrase";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "jhJ-Wj-K4X"; */
+"jhJ-Wj-K4X.title" = "Settings";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "zUN-8D-HvW"; */
+"zUN-8D-HvW.text" = "Title";

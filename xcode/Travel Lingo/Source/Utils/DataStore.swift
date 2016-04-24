@@ -14,12 +14,12 @@ private let _DataStoreInstance = DataStore()
 class DataStore
 {
     private var store = [String: AnyObject]()
-
+    
     class var sharedStore: DataStore
     {
         return _DataStoreInstance
     }
-
+    
     
     func setObject(object: AnyObject?, forKey key: String)
     {

@@ -116,7 +116,7 @@ class TranslationLocaleXMLParser: NSObject, NSXMLParserDelegate
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError)
     {
         let msg = NSLocalizedString("Unable to parse translation locale XML: %@", comment: "")
-        AppLog(.Error, .AlertUser, msg, parseError.localizedDescription)
+        AppLog(msg, parseError.localizedDescription)
     }
 }
 

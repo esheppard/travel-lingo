@@ -8,34 +8,26 @@
 
 import Foundation
 
-
-func displayStringForLanguage(language: String) -> String?
+func loadIso639LanguageMappings() -> [Iso639LanguageMapping]?
 {
-    guard let homeLanguage = Preferences.sharedPrefs.homeLanguage else {
-        return nil
-    }
+    let file = "iso639_to_language_mappings"
     
-    guard let homeMapping = iso639MappingForLanguage(homeLanguage) else {
-        return nil
-    }
-    
-    if let languageMapping = iso639MappingForLanguage(language)
+    if let resourcePath = NSBundle.mainBundle().pathForResource(file, ofType: "xml")
     {
-        // check if we have an ISO 639-1 code for this language - we can use it to have the
-        // system provide us with the correct name
-        if let iso6391 = languageMapping.iso6391Code, homeIso6391 = homeMapping.iso6391Code
+        if let data = NSData(contentsOfFile: resourcePath)
         {
-            let locale = NSLocale(localeIdentifier: homeIso6391)
-            
-            let name = locale.displayNameForKey(NSLocaleLanguageCode, value: iso6391)
-            return name?.capitalizedStringWithLocale(locale)
+            return Iso639LanguageMappingsXMLParser.parseData(data)
         }
-        
-        // otherwise if we have a ISO 639-3 code use it to find the manually localized name
-        else if let _ = languageMapping.iso6393Code, name = languageMapping.name
+        else
         {
-            return NSLocalizedString(name, comment: "")
+            let msg = NSLocalizedString("Unable to read content of %@ xml", comment: "")
+            AppLog(msg, file)
         }
+    }
+    else
+    {
+        let msg = NSLocalizedString("Unable to open %@ xml", comment: "")
+        AppLog(msg, file)
     }
     
     return nil
@@ -58,3 +50,27 @@ func iso639MappingForLanguage(language: String) -> Iso639LanguageMapping?
     return nil
 }
 
+
+func displayStringForLanguage(language: String) -> String?
+{
+    if let languageMapping = iso639MappingForLanguage(language)
+    {
+        // check if we have an ISO 639-1 code for this language - we can use it to have the
+        // system provide us with the correct name
+        if let iso6391 = languageMapping.iso6391Code
+        {
+            let locale = NSLocale.currentLocale()
+            
+            let name = locale.displayNameForKey(NSLocaleLanguageCode, value: iso6391)
+            return name?.capitalizedStringWithLocale(locale)
+        }
+            
+            // otherwise if we have a ISO 639-3 code use it to find the manually localized name
+        else if let _ = languageMapping.iso6393Code, name = languageMapping.name
+        {
+            return NSLocalizedString(name, comment: "")
+        }
+    }
+    
+    return nil
+}

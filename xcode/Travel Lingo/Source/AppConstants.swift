@@ -11,3 +11,4 @@ import Foundation
 let TranslationLocalesDataStoreKey      = "store.locales.translations"
 let Iso639LanguageMappingsDataStoreKey  = "store.mappings.iso639-to-language"
 
+let SettingsDidChangeNotification       = "SettingsDidChangeNotification"

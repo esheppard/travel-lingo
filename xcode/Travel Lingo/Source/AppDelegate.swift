@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
+        populateDataStore()
+        
+        // configure split view controller
         let splitViewController = self.window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         
@@ -44,9 +47,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func applicationWillTerminate(application: UIApplication)
     {
     }
+    
+    
+// MARK: - Data Store Configuration
+    
+    private func populateDataStore()
+    {
+        if let mappings = loadIso639LanguageMappings() {
+            DataStore.sharedStore.setObject(mappings, forKey: Iso639LanguageMappingsDataStoreKey)
+        }
+        
+        if let locales = loadLocaleTranslations() {
+            DataStore.sharedStore.setObject(locales, forKey: TranslationLocalesDataStoreKey)
+        }
+    }
 
     
-// MARK: - Split view
+// MARK: - Split View
 
     func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool
     {

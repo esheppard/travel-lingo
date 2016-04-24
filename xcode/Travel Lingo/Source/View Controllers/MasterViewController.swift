@@ -12,31 +12,30 @@ class MasterViewController: UITableViewController
 {
     var displayLocales = [TranslationLocale]()
 
+    deinit
+    {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
 
+
+// MARK: - View Controller Delegate
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        registerNotifications()
+        
+        configureDisplayLocales()
         configureNavigationButtons()
     }
 
     
     override func viewWillAppear(animated: Bool)
     {
-        super.viewWillAppear(animated)
-        
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
         
-        // populate the dataStore now that we can present AlertViews/errors to the user
-        if DataStore.sharedStore.objectForKey(Iso639LanguageMappingsDataStoreKey) == nil
-        {
-            populateDataStore()
-            configureDisplayLocales()
-        }
-        
-        // only need to restore the previous language on the iPad as phrases are not visible by default on the iPhone
-        if UI_USER_INTERFACE_IDIOM() == .Pad {
-            restoreLastLanguage()
-        }
+        super.viewWillAppear(animated)
     }
     
     
@@ -76,26 +75,20 @@ class MasterViewController: UITableViewController
     }
     
     
-// MARK: - Restoration
+// MARK: - Notifications
     
-    private func restoreLastLanguage()
+    private func registerNotifications()
     {
-        var selectDisplayLocaleAtIndex = 0
-        
-        if let lastLanguage = Preferences.sharedPrefs.lastLanguage
-        {
-            for (index, localeData) in self.displayLocales.enumerate()
-            {
-                if localeData.language == lastLanguage {
-                    selectDisplayLocaleAtIndex = index
-                }
-            }
-        }
-        
-        let indexPath = NSIndexPath(forRow: selectDisplayLocaleAtIndex, inSection: 0)
-        
-        tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: .Top)
-        tableView(tableView, didSelectRowAtIndexPath: indexPath) // Note: have to manually call delegate
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(settingsChanged(_:)),
+            name: SettingsDidChangeNotification,
+            object: nil)
+    }
+    
+    @objc func settingsChanged(notification: NSNotification)
+    {
+        tableView.reloadData()
     }
     
     
@@ -103,6 +96,14 @@ class MasterViewController: UITableViewController
     
     func showSettings(sender: AnyObject)
     {
+        if let settingsController = self.storyboard!.instantiateViewControllerWithIdentifier("SettingsNavigationController") as? UINavigationController
+        {
+            if UI_USER_INTERFACE_IDIOM() == .Pad {
+                settingsController.modalPresentationStyle = .FormSheet
+            }
+            
+            self.splitViewController?.presentViewController(settingsController, animated: true, completion: nil)
+        }
     }
 
 
@@ -136,15 +137,11 @@ class MasterViewController: UITableViewController
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         let localeData = displayLocales[indexPath.row]
-        let localeTitle = displayStringForLanguage(localeData.language)
-        
         Preferences.sharedPrefs.lastLanguage = localeData.language
         
         if UI_USER_INTERFACE_IDIOM() == .Phone
         {
             let phrasesController = self.storyboard!.instantiateViewControllerWithIdentifier("PhrasesViewController") as! PhrasesViewController
-            
-            phrasesController.title = localeTitle
             phrasesController.localeData = localeData
             
             self.navigationController?.pushViewController(phrasesController, animated: true)
@@ -153,9 +150,7 @@ class MasterViewController: UITableViewController
         {
             if let detailNavigation = self.splitViewController?.viewControllers.last as? UINavigationController
             {
-                if let phrasesController = detailNavigation.viewControllers.first as? PhrasesViewController
-                {
-                    phrasesController.title = localeTitle
+                if let phrasesController = detailNavigation.viewControllers.first as? PhrasesViewController {
                     phrasesController.localeData = localeData
                 }
             }

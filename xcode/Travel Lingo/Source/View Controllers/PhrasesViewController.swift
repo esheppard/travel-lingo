@@ -21,17 +21,75 @@ class PhrasesViewController: UITableViewController
     private var soundCache = [String: SystemSoundID]()
     
     
-    private func configureView()
+    deinit
     {
-        disposeAndClearCache()
-        tableView.reloadData()
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
+    
+    
+// MARK: - View Controller Delegate
 
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        registerNotifications()
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        // only need to restore the previous language on the iPad as phrases are not visible by default on the iPhone
+        if localeData == nil && UI_USER_INTERFACE_IDIOM() == .Pad {
+            restoreLastLanguage()
+        }
+    }
     
     override func viewWillDisappear(animated: Bool)
     {
         super.viewWillDisappear(animated)
         disposeAndClearCache()
+    }
+    
+    
+// MARK: - Configuration
+    
+    private func configureView()
+    {
+        disposeAndClearCache()
+        
+        self.title = localeData != nil ? displayStringForLanguage(localeData!.language) : nil
+        self.tableView.reloadData()
+    }
+    
+
+// MARK: - Notifications
+    
+    private func registerNotifications()
+    {
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(settingsChanged(_:)),
+            name: SettingsDidChangeNotification,
+            object: nil)
+    }
+    
+    @objc func settingsChanged(notification: NSNotification)
+    {
+        configureView()
+    }
+    
+    
+// MARK: - Restoration
+    
+    private func restoreLastLanguage()
+    {
+        if let lastLanguage = Preferences.sharedPrefs.lastLanguage,
+               lastLocaleData = translationLocaleForLanguage(lastLanguage)
+        {
+            localeData = lastLocaleData
+            configureView()
+        }
     }
     
     
@@ -58,13 +116,22 @@ class PhrasesViewController: UITableViewController
         
         if let translationPhrase = localeData?.phraseGroupings[indexPath.section].phrases[indexPath.row]
         {
-            cell.phraseLabel.text = translationPhrase.phrase
+            var phrase = translationPhrase.phrase
+            
+            // try to find the phrase in our home language
+            if let homeLanguage = Preferences.sharedPrefs.homeLanguage,
+                   homeLocale = translationLocaleForLanguage(homeLanguage)
+            {
+                let homePhrase = homeLocale.phraseGroupings[indexPath.section].phrases[indexPath.row]
+                phrase = homePhrase.native ?? homePhrase.translation
+            }
+ 
+            cell.phraseLabel.text = phrase
             cell.translationLabel.text = translationPhrase.translation
         }
         
         return cell
     }
-    
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?
     {
@@ -76,12 +143,10 @@ class PhrasesViewController: UITableViewController
         return nil
     }
     
-    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
     {
         return PhraseCell.height
     }
-    
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {

@@ -8,24 +8,28 @@
 
 import UIKit
 
-enum LogLevel: String {
-    case Message, Warning, Error
-}
-
 enum LogUserStatus {
     case Silent, AlertUser
 }
 
 
-func AppLog(level: LogLevel, _ userStatus: LogUserStatus = .Silent, _ format: String, _ args: CVarArgType...)
+func AppLog(format: String, _ args: CVarArgType...)
 {
     let msg = String(format: format, arguments: args)
-    print("\(level), \(msg)")
+    AppLog(.Silent, msg)
+}
+
+
+func AppLog(userStatus: LogUserStatus, _ format: String, _ args: CVarArgType...)
+{
+    let msg = String(format: format, arguments: args)
+    print(msg)
     
     if userStatus == .AlertUser {
         displayMessage(msg)
     }
 }
+
 
 private func displayMessage(msg: String)
 {
