@@ -9,7 +9,7 @@ An iOS app for travellers - 14 essential phrases professionally recorded by nati
 - iPhone and iPad universal app
 - Localised string resources for international regions
 - Settings screen to configure user's home language
-  * phrases are displayed in the user's home language with the translation underneath
+  * Phrases are displayed in the user's home language with the translation underneath
 
 
 **Screenshots**
