@@ -11,5 +11,5 @@ An iOS app for travellers - 14 essential phrases professionally recorded by nati
 - Settings screen to configure user's home language
   * phrases are displayed in the user's home language with the translation underneath
 
-
+**Screenshots**
 ![Languages](/screenshots/languages-screenshot.png?raw=true)  ![Greek Phrases](/screenshots/greek-phrases-screenshot.png?raw=true)
