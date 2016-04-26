@@ -24,6 +24,8 @@
 		3D2927461CCCCBF2005FD9EC /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D2927431CCCCBF2005FD9EC /* settings-icon.png */; };
 		3D2927471CCCCBF2005FD9EC /* settings-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D2927441CCCCBF2005FD9EC /* settings-icon@2x.png */; };
 		3D2927481CCCCBF2005FD9EC /* settings-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D2927451CCCCBF2005FD9EC /* settings-icon@3x.png */; };
+		3D29274A1CCD9056005FD9EC /* UISplitViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2927491CCD9056005FD9EC /* UISplitViewController+Utils.swift */; };
+		3D7F8F8B1CCF905400DA5ED7 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F8F8A1CCF905400DA5ED7 /* AppUtils.swift */; };
 		3D8300151CC644CA005876A0 /* _currencyAUD.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD841CC644CA005876A0 /* _currencyAUD.png */; };
 		3D8300161CC644CA005876A0 /* _currencyEUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD851CC644CA005876A0 /* _currencyEUR.png */; };
 		3D8300171CC644CA005876A0 /* _currencyGBP.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D83FD861CC644CA005876A0 /* _currencyGBP.png */; };
@@ -702,6 +704,8 @@
 		3D2927431CCCCBF2005FD9EC /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon.png"; sourceTree = "<group>"; };
 		3D2927441CCCCBF2005FD9EC /* settings-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon@2x.png"; sourceTree = "<group>"; };
 		3D2927451CCCCBF2005FD9EC /* settings-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon@3x.png"; sourceTree = "<group>"; };
+		3D2927491CCD9056005FD9EC /* UISplitViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Utils.swift"; sourceTree = "<group>"; };
+		3D7F8F8A1CCF905400DA5ED7 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppUtils.swift; path = Source/Utils/AppUtils.swift; sourceTree = "<group>"; };
 		3D8300001CC644CA005876A0 /* swedish_bathroom.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_bathroom.aiff; sourceTree = "<group>"; };
 		3D8300011CC644CA005876A0 /* swedish_beautiful.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_beautiful.aiff; sourceTree = "<group>"; };
 		3D8300021CC644CA005876A0 /* swedish_excuse_me.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = swedish_excuse_me.aiff; sourceTree = "<group>"; };
@@ -1475,6 +1479,7 @@
 			isa = PBXGroup;
 			children = (
 				3D8302C21CCC6C1A005876A0 /* UIColor+Theme.swift */,
+				3D2927491CCD9056005FD9EC /* UISplitViewController+Utils.swift */,
 			);
 			name = UIKit;
 			path = Source/Extensions/UIKit;
@@ -2236,8 +2241,9 @@
 			children = (
 				3DBCAE9F1CC723C900C8AFF2 /* AppLog.swift */,
 				3DBCAEA91CC7355B00C8AFF2 /* DataStore.swift */,
-				3D83029A1CCA4F13005876A0 /* FileUtils.swift */,
+				3D7F8F8A1CCF905400DA5ED7 /* AppUtils.swift */,
 				3D83029E1CCA53F7005876A0 /* AudioUtils.swift */,
+				3D83029A1CCA4F13005876A0 /* FileUtils.swift */,
 				3D1F7BE21CC9F374000A3340 /* Iso639MappingUtils.swift */,
 				3D2927121CCC8ECA005FD9EC /* TranslationLocaleUtils.swift */,
 			);
@@ -3105,6 +3111,7 @@
 				3DEC33371CC6381E0046ED4B /* AppDelegate.swift in Sources */,
 				3D29271B1CCCA249005FD9EC /* ChooseOptionViewController.swift in Sources */,
 				3D2927211CCCA258005FD9EC /* SettingsOption.swift in Sources */,
+				3D29274A1CCD9056005FD9EC /* UISplitViewController+Utils.swift in Sources */,
 				3D8302931CC7907B005876A0 /* Preferences.swift in Sources */,
 				3DBCAEA31CC72AEA00C8AFF2 /* AppConstants.swift in Sources */,
 				3D83029F1CCA53F7005876A0 /* AudioUtils.swift in Sources */,
@@ -3113,6 +3120,7 @@
 				3D2927281CCCA26B005FD9EC /* PhraseCell.swift in Sources */,
 				3D83029B1CCA4F13005876A0 /* FileUtils.swift in Sources */,
 				3D8302C51CCC6C1A005876A0 /* String+Utils.swift in Sources */,
+				3D7F8F8B1CCF905400DA5ED7 /* AppUtils.swift in Sources */,
 				3D2927131CCC8ECA005FD9EC /* TranslationLocaleUtils.swift in Sources */,
 				3D8302C61CCC6C1A005876A0 /* UIColor+Theme.swift in Sources */,
 				3DBCAEAA1CC7355B00C8AFF2 /* DataStore.swift in Sources */,
@@ -3244,7 +3252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -3283,7 +3291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

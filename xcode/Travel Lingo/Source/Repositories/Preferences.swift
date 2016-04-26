@@ -63,7 +63,8 @@ class Preferences
     private func registerDefaults()
     {
         var defaultValues: [String: AnyObject] = [
-            HomeLanguageKey: "english"
+            HomeLanguageKey: "english",
+            LastLanguageKey: "arabic"
         ]
         
         // find the users preferred language

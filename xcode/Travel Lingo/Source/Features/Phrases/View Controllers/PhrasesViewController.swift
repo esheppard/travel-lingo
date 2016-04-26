@@ -39,8 +39,8 @@ class PhrasesViewController: UITableViewController
     {
         super.viewWillAppear(animated)
         
-        // only need to restore the previous language on the iPad as phrases are not visible by default on the iPhone
-        if localeData == nil && UI_USER_INTERFACE_IDIOM() == .Pad {
+        // only need to restore the previous language when the phrases view controller is visible
+        if localeData == nil && self.splitViewController!.collapsed == false {
             restoreLastLanguage()
         }
     }
@@ -153,7 +153,6 @@ class PhrasesViewController: UITableViewController
         if let phraseGrouping = localeData?.phraseGroupings[indexPath.section]
         {
             let phrase: TranslationPhrase = phraseGrouping.phrases[indexPath.row]
-            
             playAudio(phrase.audioFile)
         }
         

@@ -33,8 +33,6 @@ class MasterViewController: UITableViewController
     
     override func viewWillAppear(animated: Bool)
     {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
-        
         super.viewWillAppear(animated)
     }
     
@@ -102,7 +100,7 @@ class MasterViewController: UITableViewController
     {
         if let settingsController = self.storyboard!.instantiateViewControllerWithIdentifier("SettingsNavigationController") as? UINavigationController
         {
-            if UI_USER_INTERFACE_IDIOM() == .Pad {
+            if isPad() {
                 settingsController.modalPresentationStyle = .FormSheet
             }
             
@@ -132,33 +130,49 @@ class MasterViewController: UITableViewController
         cell.textLabel!.text = displayStringForLanguage(locale.language)
         cell.imageView!.image = locale.flagImage
         
-        cell.accessoryType = .DisclosureIndicator
+        cell.accessoryType =  .DisclosureIndicator
         
         return cell
     }
-    
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         let localeData = displayLocales[indexPath.row]
         Preferences.sharedPrefs.lastLanguage = localeData.language
         
-        if UI_USER_INTERFACE_IDIOM() == .Phone
+        var detailController: UINavigationController?
+        var phrasesController: PhrasesViewController?
+        
+        // on the iPhone (compact) the split view controller is collapsed
+        // therefore we need to create the navigation controller and it's view controller
+        if splitViewController!.collapsed
         {
-            let phrasesController = self.storyboard!.instantiateViewControllerWithIdentifier("PhrasesViewController") as! PhrasesViewController
-            phrasesController.localeData = localeData
-            
-            self.navigationController?.pushViewController(phrasesController, animated: true)
+            phrasesController = self.storyboard!.instantiateViewControllerWithIdentifier("PhrasesViewController") as? PhrasesViewController
+            detailController = UINavigationController(rootViewController: phrasesController!)
         }
-        else if UI_USER_INTERFACE_IDIOM() == .Pad
+        else
         {
-            if let detailNavigation = self.splitViewController?.viewControllers.last as? UINavigationController
+            // otherwise if the split view controller shows the detail view already there is no need to create the controllers
+            if let existingController = splitViewController!.viewControllers.last as? UINavigationController
             {
-                if let phrasesController = detailNavigation.viewControllers.first as? PhrasesViewController {
-                    phrasesController.localeData = localeData
+                detailController = existingController
+                phrasesController = existingController.viewControllers.first as? PhrasesViewController
+                
+                // when the panel is floating over the detail controller (ie. portrait on iPad) then hide it
+                // automatically now that the user has selected an item
+                if isPad() && isPortrait() {
+                    splitViewController!.toggleMasterView()
                 }
             }
         }
+        
+        phrasesController?.localeData = localeData
+        
+        if let detailController = detailController {
+            splitViewController!.showDetailViewController(detailController, sender: self)
+        }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
 
